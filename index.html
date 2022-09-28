@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Web design project portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width =device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gentium+Plus:ital@1&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+
+
+</head>
+<body>
+    <section id="banner">
+        <div class="banner-text">
+            <h1> Web Design</h1>
+            <p>by Mahmood Sakib</p>
+        </div>
+    </section>
+    <div id="sideNav">
+        <nav>
+            <ul>
+                <li><a href="#banner">Home</a></li>
+                <li><a href="#project">Projects</a></li>
+                <li><a href="#footer">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div id="menuBtn">
+        <img src="menu.png" id="menu">
+    </div>
+    <script>
+        var menuBtn = document.getElementById("menuBtn")
+        var sideNav = document.getElementById("sideNav")
+        var menu = document.getElementById("menu")
+
+        menuBtn.onclick = function () {
+            if (sideNav.style.right == "-150px") {
+                sideNav.style.right = "0";
+            }
+            else {
+                sideNav.style.right = "-150px";
+            }
+        }
+    </script>
+    <section id="project">
+        <div class="title-text">
+            <p>CONTENT</p>
+            <h1>My Projects</h1>
+        </div>
+        <div class="project-box">
+            <div class="single-project">
+                <img src="pic-1.jpg">
+                <div class="overlay"></div>
+                <div class="project-desc">
+                    <h3>Project 1</h3>
+                    <hr>
+                    <style>
+                        a { color: white;}
+                    </style>
+                    <a href="https://msakib20.github.io/">CLICK HERE</a>
+                </div>
+            </div>
+            <div class="single-project">
+                <img src="pic-2.jpg">
+                <div class="overlay"></div>
+                <div class="project-desc">
+                    <h3>Project 2</h3>
+                    <hr>
+                    <style>
+                        a {
+                            color: white;
+                        }
+                    </style>
+                    <a href=" http://lamp.cse.fau.edu/~msakib2022">CLICK HERE</a>
+                </div>
+            </div>
+            <div class="single-project">
+                <img src="pic-3.jpg">
+                <div class="overlay"></div>
+                <div class="project-desc">
+                    <h3>Project 3</h3>
+                    <hr>
+                    <p> Click Here </p>
+                </div>
+            </div>
+            <div class="single-project">
+                <img src="pic-4.jpg">
+                <div class="overlay"></div>
+                <div class="project-desc">
+                    <h3>Project 4</h3>
+                    <hr>
+                    <p> Click Here </p>
+                </div>
+            </div>
+            <div class="single-project">
+                <img src="pic-5.jpg">
+                <div class="overlay"></div>
+                <div class="project-desc">
+                    <h3>Project 5</h3>
+                    <hr>
+                    <p> Click Here </p>
+                </div>
+            </div>
+            <div class="single-project">
+                <img src="pic-6.jpg">
+                <div class="overlay"></div>
+                <div class="project-desc">
+                    <h3>Project 6</h3>
+                    <hr>
+                    <p> Click Here </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="footer">
+        <div class="title-text">
+            <p>CONTACT</p>
+        </div>
+        <div class="social-links">
+            <a class="modify" href="https://www.facebook.com/"><ion-icon name="logo-facebook"></ion-icon></a>
+            <a class="modify" href="https://www.instagram.com/"><ion-icon name="logo-instagram"></ion-icon></a>
+            <a class="modify" href="https://www.linkedin.com/in/mahmoodsakib13"><ion-icon name="logo-linkedin"></ion-icon></a>
+        </div>
+    </section>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
